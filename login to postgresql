@@ -1,0 +1,14 @@
+To log into postgresql, you need to use postgres user, however, it failed when I run the following command:
+
+root@cenos7-rock#psql -h localhost -U postgres
+
+psql:FATAL: Ident authentication failed for user "postgres"
+
+To fix it, run the following commands:
+root@cenos7-rock#su postgres
+It will enter into postgres shell command, then run 
+
+bash-4.2$ psql
+
+
+
